@@ -16,7 +16,7 @@ from sklearn.ensemble import VotingClassifier, RandomForestClassifier
 
 def process_data_for_labels(ticker):
 	hm_days= 7
-	df = pd.read_csv('sp500_joined_closes.csv', index_col=0)
+	df = pd.read_csv('C:/Users/Backup.AjithkumarS-PC/sp500_joined_closes.csv', index_col=0)
 	tickers= df.columns.values.tolist()
 	df.fillna(0,inplace=True)
 	
