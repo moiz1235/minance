@@ -9,7 +9,7 @@ style.use('ggplot')
 start = dt.datetime(2012,1,1)
 end = dt.datetime(2016,12,31)
 
-df = pd.read_csv('C:/Users/Backup.AjithkumarS-PC/tlsa.csv', parse_dates=True, index_col=0)
+df = pd.read_csv('./tlsa.csv', parse_dates=True, index_col=0)
 
 df['100ma'] = df['Adj Close'].rolling(window=100, min_periods=0).mean()
 #df.dropna(inplace=True)
